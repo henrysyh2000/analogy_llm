@@ -100,10 +100,10 @@ class Model:
         )
         self.kwargs = kwargs
 
-    def generate(self, prompt, max_new_tokens=128, temperature=0.7):
+    def generate(self, prompt, max_new_tokens=512, temperature=1.0):
 
         messages = [
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "Reasoning: low. Keep your reasoning analysis short and concise in the task. The length of the intermediate reasoning should not exceed 200 words."},
             {"role": "user", "content": prompt},
         ]
 

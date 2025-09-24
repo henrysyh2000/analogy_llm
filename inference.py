@@ -10,7 +10,7 @@ import datetime
 
 # Format: YYYY-MM-DD
 # DATE = datetime.date.today().strftime("%m-%d")
-DATE = "09-22"
+DATE = "09-23"
 
 def main():
     ''' 
